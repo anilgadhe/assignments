@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body{
+            height: 100vh;
+           background-image: linear-gradient(rgb(87, 85, 85),rgb(73, 50, 50),rgb(0,0,0));
+            }
+
+        header{
+            display: flex;
+            flex-direction: row;
+            font-family: Arial;
+            justify-content: space-between;
+            padding: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        header span{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: Arial;
+        }
+
+section
+    {
+            
+            background-image: url("./netflix.jpg");
+            
+            color: white;
+            background-size:cover;
+            height: 500px;
+            border: 0.5 solid gray;
+            border-radius: 40px;
+            margin:20px;
+        
+        }
+        .title{
+            font-family: Arial;
+            color: #E50914;
+            font-size: 42px;
+            font-weight: bold;
+          
+
+        }
+
+        header nav{
+            background-color: black;
+            color: white;
+            border-radius: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            font-size: 14px;
+            
+
+        }
+
+        .bi-translate{
+            background-color: #151313;
+            border-radius: 100px;
+            color: white;
+            padding: 10px;
+         
+        }
+
+        .signin{
+            background-color: white;
+            border-radius: 100px;
+             padding: 8px;
+             display: inline-block;
+             width: 70px;
+             text-align: center;
+             margin-left: 5px;
+             margin-right: 5px;
+         
+        }
+
+        section .shade{
+            background-color: rgba(21, 20, 20, 0.8);
+            height: 100%;
+            text-align: center;
+            border-radius: 40px;
+
+        }
+
+        .shade .section-title{
+            font-size: 56px;
+            font-weight: 900;
+            padding-top: 140px;
+        }
+
+        .shade .section-subtitle{
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        main .main-title{
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 60px;
+        }
+        
+        .main-boxes{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+      
+         .mail{
+            background-color: rgba(126,125,125,0.744);
+            border:1px solid gray;
+           
+            display: inline-block;
+          
+            border-radius: 30px;
+            padding-top: 15px;
+            padding-left: 10px;
+            font-size: 20px;
+            text-align: left;
+         
+            height:40px;
+            width: 350px;
+          }
+
+          .btn-started{
+            background-color: #E50914;
+            display: inline-block;
+            padding-top: 15px;
+            padding-left: 10px;
+            font-size: 20px;
+            height:40px;
+            width: 250px;
+            border-radius: 30px;
+            margin-left: 10px;
+          }
+
+    </style>
+</head>
+<body>
+<header>
+  <div class="title"> NETFLIX</div>
+  <nav>
+    <span>Popular now</span>
+    <span>Plans</span>
+    <span>Reasons to Join</span>
+    <span>FAQ</span>
+</nav>
+  <div class="language">
+    <span class="bi bi-translate">   Enlglish  <span class="bi bi-caret-down-fill"></span></span>
+    <span class="signin">Sign In</span>
+  </div>
+</header>
+<section>
+<div class="shade">
+    <div class="section-title" >Unlimited movies, TV <br> shows and more</div>
+
+<div class="section-subtitle">Starts at ₹149. Cancel at any time.</div>
+<main>
+    <div class="main-title">Ready to watch? Enter your email to create or restart your membership.</div>
+    <div class="main-boxes">
+        <span class="mail">Email address</span> 
+        <span class="btn-started">Get Started <span class="bi bi-chevron-right"></span></span>
+    </div>
+</main>
+</div>
+</section>
+</body>
+</html>

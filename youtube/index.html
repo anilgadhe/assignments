@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+
+body{
+  margin: 0;
+  height: 100%;
+}
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        top: 0;
+        padding: 10px;
+        align-items: center;
+        font-family: Arial;
+        height: 70px;
+        z-index: 10;
+        background-color: white;
+        position: sticky;
+    }
+
+    .bi-justify{
+        font-size: 35px;
+     
+        margin-left: 25px;
+        margin-right: 18px;
+        
+    }
+    
+
+    .search-bar{
+        display: flex;
+        
+    }
+    .x-search{
+        width: 600px;
+        border: 0.5px solid rgb(201, 197, 197);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        text-align:end;
+        padding-top: 8px;
+        padding-right: 5px;
+    }
+
+    .bi-x-lg{
+    
+        font-size: 30px;
+        color: black;
+    }
+    .search-btn{
+        width: 80px;
+        border: 0.5px solid rgb(201, 197, 197);
+         text-align:center;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-top: 10px;
+       
+
+        
+    }
+    .bi-search{
+        font-size: 25px;
+        color: black;
+        
+    }
+    .third-sec{
+        display: flex;
+    
+    }
+
+    .mic{
+        display: flex;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color:#f0e9e9;
+        font-size: 23px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 25px;
+        opacity: 0.8;
+    }
+
+    .mic:hover{
+        opacity: 1;
+    }
+
+    .create-btn{
+        display: flex;
+        background-color: #f0e9e9;
+        border-radius: 20px;
+        align-items: center;
+        height: 50px;
+        width: 110px;
+        font-family: Arial;
+        margin-right: 15px;
+        opacity: 0.8;
+    }
+
+    .create-btn:hover{
+        opacity: 1;
+    }
+    
+    .create-btn .plus{
+        font-size: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+        
+
+    }
+    
+    .create{
+        font-size: 20px;
+    }
+    .bell{
+        display: flex;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color:#f0e9e9;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;  
+        position: relative;
+        opacity: 0.8;
+    }
+    .bi-bell{
+        font-size: 23px;
+    }
+    .bell:hover{
+        opacity: 1;
+    }
+
+    .badge{
+        position: absolute;
+        background-color: red;
+        
+        font-size: 10px;
+        padding: 5px;
+        color: white;
+        border-radius: 100%;
+        top: -1px;
+        right: 5px;
+
+    }
+       .user{
+        display: flex;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color:#f0e9e9;
+        font-size: 23px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px; 
+       }
+         
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    height: 100%;
+  
+}
+nav{
+    text-align: center;
+    position: sticky;
+    top: 115px; 
+    z-index: 999; 
+    height: 50px;
+    left: 0;
+    background-color: white
+    
+}
+
+.nav-title{
+    font-size: 20px;
+    
+}
+.box{
+    margin-top: 25px;
+}
+
+.banner img{
+    border-radius: 20px;
+}
+article{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    font-family: Arial;
+    
+}
+.intitute-name{
+    font-size: 50px;
+    font-weight: bold;
+}
+.extra-info{
+  color:gray;
+}
+.blue{
+    color:blue;
+}
+.title-info{
+    padding-bottom: 30px;
+}
+
+main{
+    height: 100%;
+ margin-top: 5px; 
+ overflow: auto;  
+}
+article{
+    margin-top: 15px;
+}
+.subscribed{
+    font-size: 20px;
+    background-color: rgb(214, 213, 213);
+    border-radius: 20px;
+    width: 180px;
+    padding: 10px;
+}
+.elips{
+    width:600px ;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nav-titles{
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+}
+.nav-titles span{
+    padding-left: 30px;
+}
+.nav-titles .home{
+    padding-left:0;
+}
+
+.foryouname{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Foryou{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    margin-bottom: 30px;
+}
+.frame iframe{
+ width: 450px;
+ height: 250px;   
+ border-radius: 20px;
+}
+
+.likes{
+    color: gray;
+}
+
+.caption{
+     font-size: 20px;
+}
+
+.Videos{
+    display: grid;
+    grid-template-columns:3fr 3fr 3fr 3fr ;
+}
+
+.vedio-frame iframe{
+    width: 340px;
+ height: 200px;   
+ border-radius: 20px;
+}
+
+.vedio-title{
+margin-top: 30px;
+margin-bottom: 30px;
+font-size: 20px;
+font-weight: bold;
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <span class="bi bi-justify"></span>
+            <img src="./youtubeLogo.png" alt="youtube-Logo">
+        </div>
+        <div class="search-bar">
+            <div class="x-search">
+                <span class="bi bi-x-lg"></span>
+            </div>
+            <div class="search-btn">
+                <span class="bi bi-search"></span>
+            </div>
+            <div class="mic">
+                <span class="bi bi-mic-fill"></span>
+            </div>
+        </div>
+        <div class="third-sec">
+            <div class="create-btn">
+                <div class="plus">+</div>
+                <div class="create">Create</div>
+                
+            </div>
+
+            <div class="bell" title="notifications">
+               <div  class="bi bi-bell">
+                <div class="badge">9+</div>
+               </div>
+            </div>
+            <div class="user">
+                <span class="bi bi-person-fill"></span>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div>
+            
+              <nav>
+                <div class="box">
+                    <div class="bi bi-house-door nav-title"></div>
+                     <div>Home</div>
+                </div>
+                <div class="box">
+                    <div class="bi bi-camera-video nav-title"></div>
+                     <div>Shorts</div>
+                </div>
+
+                <div class="box">
+                    <i class="bi bi-person-video nav-title"></i>
+                     <div>Subscription</div>
+                </div>
+
+                <div class="box">
+                    <div class="bi bi-person-fill nav-title"></div>
+                     <div>You</div>
+                </div>
+            </nav>
+        </div>
+     <main>
+           <div class="banner">
+            <img src="./banner.jpg" alt="banner" width="95%">
+           </div>
+
+         <article>
+            <div class="logo">
+              <img src="./nareshItLogo.jpg" alt="nareshItLogo">
+            </div>
+            <div class="article-title title-info">
+                <div class="intitute-name title-info">Naresh i Technologies</div>
+                <div class="extra-info title-info"><span>@NareshIT</span>•1.32M subscribers•3.4K videos
+                </div>
+                <div class="elips extra-info title-info " title="  We are one of the software training organization With a library of 200+ courses, we have helped ">
+                    We are one of the software training organization With a library of 200+ courses, we have helped 
+                </div>
+                <div class="title-info"><span class="blue">instagram.com/nareshitech</span>
+                    and 7 more links
+                </div>
+                
+                <div class="subscribed">
+                    <span class="bi bi-bell"></span>
+                    subscribed
+                    <span class="bi bi-chevron-down"></span>
+                </div>
+            </div>    
+         </article>
+
+            <div class="nav-titles">
+                <span class="home">Home</span>
+                <span>Videos</span>
+                <span>Shorts</span>
+                <span>Live</span>
+                <span>playlists</span>
+                <span>Posts</span>
+                <span class="bi bi-search"></span>
+
+
+            </div>
+        <hr noshade color="gray" width="95%" size="0.5">
+
+        <div class="foryouname">
+            <b>For You</b>
+        </div>
+
+            <div class="Foryou">
+                <div class="card">
+                    <div class="frame"><iframe src="https://www.youtube.com/embed/xbMXTxacwdU" frameborder="0"></iframe></div>
+                    <div class="caption"><b>AWS CloudFront Deep Dive | Caching | Security | <i class="bi bi-three-dots-vertical"></i><br> Performance Optiamization |
+                        Global Edge locations.</b></div>
+                         <br>
+                         <div class="likes">1.6k views 2weeks ago</div>
+
+                </div>
+
+                <div class="card">
+                  <div class="frame"><iframe src="https://www.youtube.com/embed/OzltVfNBKt4" frameborder="0"></iframe></div>
+                    <div class="caption"><b>AWS CloudFront Deep Dive | Caching | Security | <i class="bi bi-three-dots-vertical"></i><br> Performance Optiamization |
+                        Global Edge locations.</b></div>
+                         <br>
+                         <div class="likes">1.6k views 2weeks ago</div>
+
+                </div>
+
+                <div class="card">
+                   <div class="frame"> <iframe src="https://www.youtube.com/embed/OzltVfNBKt4" frameborder="0"></iframe></div>
+                    <div class="caption"><b>AWS CloudFront Deep Dive | Caching | Security |<i class="bi bi-three-dots-vertical"></i><br> Performance Optiamization |
+                        Global Edge locations.</b></div>
+                         <br>
+                         <div class="likes">1.6k views 2weeks ago</div>
+
+                </div>
+
+                
+               
+            </div>
+              
+            <hr>
+            <div class="vedio-title"><b>Past live streams</b></div>
+            <div class="Videos">
+                <div class="card">
+                    <div class="vedio-frame"> <iframe src="https://www.youtube.com/embed/HDte6jsic0U" frameborder="0"></iframe></div>
+                     <div class="vedio-caption"><b>Mastering Centralized Cloud <i class="bi bi-three-dots-vertical"></i><br> Performance Optiamization |
+                         Networking with Aws Transcription</b></div>
+                          <br>
+                          <div class="likes">1.6k views 2weeks ago</div>
+ 
+                </div>
+
+                <div class="card">
+                    <div class="vedio-frame"> <iframe src="https://www.youtube.com/embed/wKWTdcMMYOg" frameborder="0"></iframe></div>
+                     <div class="vedio-caption"><b>Mastering Centralized Cloud <i class="bi bi-three-dots-vertical"></i><br> Performance Optiamization |
+                         Networking with Aws Transcription</b></div>
+                          <br>
+                          <div class="likes">1.6k views 2weeks ago</div>
+ 
+                </div>
+                  
+                <div class="card">
+                    <div class="vedio-frame"> <iframe src="https://www.youtube.com/embed/xbMXTxacwdU" frameborder="0"></iframe></div>
+                     <div class="vedio-caption"><b>Mastering Centralized Cloud <i class="bi bi-three-dots-vertical"></i><br> Performance Optiamization |
+                         Networking with Aws Transcription</b></div>
+                          <br>
+                          <div class="likes">1.6k views 2weeks ago</div>
+ 
+                 </div>
+
+                 <div class="card">
+                    <div class="vedio-frame"> <iframe src="https://www.youtube.com/embed/wKWTdcMMYOg" frameborder="0"></iframe></div>
+                     <div class="vedio-caption"><b>Mastering Centralized Cloud <i class="bi bi-three-dots-vertical"></i><br> Performance Optiamization |
+                         Networking with Aws Transcription</b></div>
+                          <br>
+                          <div class="likes">1.6k views 2weeks ago</div>
+ 
+                 </div>
+
+            </div>
+              
+            <hr>
+            <div class="vedio-title"><b>Vedioes</b></div>
+            <div class="Videos">
+                <div class="card">
+                    <div class="vedio-frame"> <iframe src="https://www.youtube.com/embed/HDte6jsic0U" frameborder="0"></iframe></div>
+                     <div class="vedio-caption"><b>Mastering Centralized Cloud <i class="bi bi-three-dots-vertical"></i><br> Performance Optiamization |
+                         Networking with Aws Transcription</b></div>
+                          <br>
+                          <div class="likes">1.6k views 2weeks ago</div>
+ 
+                </div>
+
+                <div class="card">
+                    <div class="vedio-frame"> <iframe src="https://www.youtube.com/embed/wKWTdcMMYOg" frameborder="0"></iframe></div>
+                     <div class="vedio-caption"><b>Mastering Centralized Cloud <i class="bi bi-three-dots-vertical"></i><br> Performance Optiamization |
+                         Networking with Aws Transcription</b></div>
+                          <br>
+                          <div class="likes">1.6k views 2weeks ago</div>
+ 
+                </div>
+                  
+                <div class="card">
+                    <div class="vedio-frame"> <iframe src="https://www.youtube.com/embed/xbMXTxacwdU" frameborder="0"></iframe></div>
+                     <div class="vedio-caption"><b>Mastering Centralized Cloud <i class="bi bi-three-dots-vertical"></i><br> Performance Optiamization |
+                         Networking with Aws Transcription</b></div>
+                          <br>
+                          <div class="likes">1.6k views 2weeks ago</div>
+ 
+                 </div>
+
+                 <div class="card">
+                    <div class="vedio-frame"> <iframe src="https://www.youtube.com/embed/wKWTdcMMYOg" frameborder="0"></iframe></div>
+                     <div class="vedio-caption"><b>Mastering Centralized Cloud <i class="bi bi-three-dots-vertical"></i><br> Performance Optiamization |
+                         Networking with Aws Transcription</b></div>
+                          <br>
+                          <div class="likes">1.6k views 2weeks ago</div>
+ 
+                 </div>
+
+            </div>
+
+    </main>
+    </section>
+</body>
+</html>
