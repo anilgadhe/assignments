@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-UI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+           * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+      }
+
+    html, body {
+         width: 100%;
+         height: 100%;
+       }
+    header{
+        position: sticky;
+        z-index: 10;
+        height: 60px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        background-color: #131921;
+        color: white;
+        font-family: Arial;
+        top: 0;
+
+    }
+    section{
+    height: 100%;
+    overflow:auto;
+     
+    }
+    .header1{
+        display: flex;  
+    }
+    .logo{
+        margin: 10px;
+    }
+    .address{
+       padding-top: 12px;
+       margin-left: 5px;
+    }
+    .address-1{
+        font-size: 13px;
+        color:rgb(211, 207, 207);
+    }
+    .searchbar{
+        display: flex;
+        align-items: center;
+
+    }
+    .first-search{
+    
+        background-color: rgb(226, 223, 223);
+        color: black;
+        width: 65px;
+        padding: 12px;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+    }
+    
+    .center-search{
+        background-color: white;
+        color: black;
+        width: 600px;
+        padding: 12px;
+        text-align: start; 
+    }
+
+    .end-search{
+        background-color:#F3A847;
+        color: black;
+        width: 50px;
+        padding: 12px;
+        text-align: start;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+     .extra{
+        display: flex;
+        margin-top: 20px;
+
+     }
+
+    .EN{
+        text-align: center;
+        font-weight: bold;
+        color: white;
+
+    }
+
+     .tiranga{
+        width: 30px;
+        margin-left: 15px;
+        
+    }
+      
+  .tiranga .orange{
+        background-color: #fd7309;
+        width: 25px;
+        height: 5px;
+    }
+
+    .white{
+        background-color: white;
+        width: 25px;
+        height: 5px;
+    }
+    .green{
+        background-color: green;
+        width: 25px;
+        height: 5px;
+    }
+
+    .headerend{
+        display: flex;
+        align-items: center;
+    }
+
+    .signin{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .return{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    nav{
+        height: 40px;
+        width: 100%;
+        background-color: #232F3E;
+    }
+
+    .background img{
+        background-size: cover;
+        width: 99%;
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 600px;
+        
+    }
+
+    .cards-container{
+        margin-top: -350px;
+        margin-left: 20px;
+        margin-right: 18px;
+    }
+
+    .card{
+        background-color:white;
+        padding: 10px;
+       
+  
+    }
+    .Row-1{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        grid-gap: 20px;
+        margin-bottom: 40px;
+        
+    }
+
+    .row-1{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    .row-2{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        padding-left: 10px;
+        margin-bottom: 40px;
+    
+    }
+
+    .pics img{
+        width: 150px;
+
+    }
+
+    .card-header{
+        font-size: 26px;
+        font-weight: bold;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    .show-more{
+        margin-left: 10px;
+        color: blue;
+    }
+
+    .Row-2{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        grid-gap: 20px;
+        margin-bottom: 40px;
+        
+    }
+
+    .Totop{
+        height: 40px;
+        background-color: #485769;
+        text-align: center;
+        text-decoration:none;
+        color: white;
+        padding-top: 10px;
+        font-size: 20px;
+
+    }
+
+    .Totop a{
+        text-decoration:none;
+        color: white;
+    }
+    footer{
+        background-color:#232F3E ;
+    
+        padding-bottom: 30px;
+        
+      
+    }
+    .footer-row-1{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        padding-top: 40px;
+        background-color: #232F3E;
+        color: white;
+        font-family: Arial;
+        padding-left: 60px;
+        padding-bottom: 35px;
+    }
+    .footer-row-1 p{
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .footer-row-2 {
+        text-align: center;
+    }
+    .footer-title{
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+</style>
+<body>
+    <header>
+     <div class="header1">
+        <div class="logo" id="Totop">
+                <img src="./Logo.png" alt="amzonlogo" width="130px" height="45px"> 
+        </div>
+        <div class="address">
+           <span class="address-1"> &nbsp; &nbsp;Delivering to Hydrabad 50006</span> <br>
+            <span class="bi bi-geo-alt">Update location</span>
+        </div>
+     </div>
+
+        <div class="searchbar">
+            <div class="first-search" >All <span class="bi bi-caret-down-fill"></span></div>
+            <div class="center-search">Search amazon.in</div>
+            <div class="end-search"><span class="bi bi-search"></span></div>
+         <div class="extra">
+             <div class="tiranga">
+                <div class="orange"></div>
+                <div class="white "></div>
+                <div class="green "></div>
+             </div> 
+            <div class="EN">EN <span class="bi bi-caret-down-fill"></span></div>
+           </div>
+  </div>
+
+    <div class="headerend">
+         
+        <div class="signin">hello, sign in <br>
+            <b>Accounts & Lists</b> <span class="bi bi-caret-down-fill"></span></div>
+        <div class="return">Return <br>& Orders
+       </div>
+        <div class="cart">
+           <img src="./cart.png" alt="amazon-cart"  height="40px">
+     </div>
+    </div>
+   </header>
+   <section>
+    <nav>
+    </nav>
+    <div class="background">
+        <img src="./Amazon-background.jpg" alt="background-image">
+    </div>
+    <div class="cards-container">
+      <div class="Row-1">
+        <div class="card">
+            <div class="card-header">Application for your home |<br> Up to 55% off</div>
+            <div class="row-1">
+                <div class="pics">
+                    <img src="./a1.jpg" alt="ac">
+                    <p>Air conditiones</p>
+                </div>
+                <div class="pics">
+                    <img src="./a2.jpg" alt="refrijtor">
+                    <p>Refrigerator</p>
+                </div>
+                
+            </div>
+            <div class="row-2">
+                <div class="pics">
+                    <img src="./a3.jpg" alt="a3">
+                    <p>Microwaves</p>
+                </div>
+                <div  class="pics">
+                    <img src="./a4.jpg" alt="a4">
+                    <p>Washing machines</p>
+
+                </div>
+                
+            </div>
+            <div class="show-more">Show more</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Application for your home |<br> Up to 55% off</div>
+            <div class="row-1">
+                <div class="pics">
+                    <img src="./a5.jpg" alt="ac">
+                    <p>Air conditiones</p>
+                </div>
+                <div class="pics">
+                    <img src="./a6.jpg" alt="refrijtor">
+                    <p>Refrigerator</p>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="pics">
+                    <img src="./a7.jpg" alt="a3">
+                    <p>Microwaves</p>
+                </div>
+                <div  class="pics">
+                    <img src="./a8.jpg" alt="a4">
+                    <p>Washing machines</p>
+
+                </div>
+                
+            </div>
+            <div class="show-more">Show more</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Application for your home |<br> Up to 55% off</div>
+            <div class="row-1">
+                <div class="pics">
+                    <img src="./a9.jpg" alt="ac">
+                    <p>Air conditiones</p>
+                </div>
+                <div class="pics">
+                    <img src="./a10.jpg" alt="refrijtor">
+                    <p>Refrigerator</p>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="pics">
+                    <img src="./a11.jpg" alt="a3">
+                    <p>Microwaves</p>
+                </div>
+                <div  class="pics">
+                    <img src="./a12.jpg" alt="a4">
+                    <p>Washing machines</p>
+
+                </div>
+               
+            </div>
+            <div class="show-more">Show more</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Application for your home |<br> Up to 55% off</div>
+            <div class="row-1">
+                <div class="pics">
+                    <img src="./a13.jpg" alt="ac">
+                    <p>Air conditiones</p>
+                </div>
+                <div class="pics">
+                    <img src="./a14.jpg" alt="refrijtor">
+                    <p>Refrigerator</p>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="pics">
+                    <img src="./a13.jpg" alt="a3">
+                    <p>Microwaves</p>
+                </div>
+                <div  class="pics">
+                    <img src="./a16.jpg" alt="a4">
+                    <p>Washing machines</p>
+
+                </div>
+                
+            </div>
+            <div class="show-more">Show more</div>
+        </div>
+        
+      </div>
+
+      <div class="Row-2">
+        <div class="card">
+            <div class="card-header">Application for your home |<br> Up to 55% off</div>
+            <div class="row-1">
+                <div class="pics">
+                    <img src="./a17.jpg" alt="ac">
+                    <p>Air conditiones</p>
+                </div>
+                <div class="pics">
+                    <img src="./a18.jpg" alt="refrijtor">
+                    <p>Refrigerator</p>
+                </div>
+                
+            </div>
+            <div class="row-2">
+                <div class="pics">
+                    <img src="./a19.jpg" alt="a3">
+                    <p>Microwaves</p>
+                </div>
+                <div  class="pics">
+                    <img src="./a20.jpg" alt="a4">
+                    <p>Washing machines</p>
+
+                </div>
+                
+            </div>
+            <div class="show-more">Show more</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Application for your home |<br> Up to 55% off</div>
+            <div class="row-1">
+                <div class="pics">
+                    <img src="./a21.jpg" alt="ac">
+                    <p>Air conditiones</p>
+                </div>
+                <div class="pics">
+                    <img src="./a22.jpg" alt="refrijtor">
+                    <p>Refrigerator</p>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="pics">
+                    <img src="./a23.jpg" alt="a3">
+                    <p>Microwaves</p>
+                </div>
+                <div  class="pics">
+                    <img src="./a24.jpg" alt="a4">
+                    <p>Washing machines</p>
+
+                </div>
+                
+            </div>
+            <div class="show-more">Show more</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Application for your home |<br> Up to 55% off</div>
+            <div class="row-1">
+                <div class="pics">
+                    <img src="./a25.jpg" alt="ac">
+                    <p>Air conditiones</p>
+                </div>
+                <div class="pics">
+                    <img src="./a26.jpg" alt="refrijtor">
+                    <p>Refrigerator</p>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="pics">
+                    <img src="./a27.jpg" alt="a3">
+                    <p>Microwaves</p>
+                </div>
+                <div  class="pics">
+                    <img src="./a28.jpg" alt="a4">
+                    <p>Washing machines</p>
+
+                </div>
+               
+            </div>
+            <div class="show-more">Show more</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Application for your home |<br> Up to 55% off</div>
+            <div class="row-1">
+                <div class="pics">
+                    <img src="./a29.jpg" alt="ac">
+                    <p>Air conditiones</p>
+                </div>
+                <div class="pics">
+                    <img src="./a30.jpg" alt="refrijtor">
+                    <p>Refrigerator</p>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="pics">
+                    <img src="./a31.jpg" alt="a3">
+                    <p>Microwaves</p>
+                </div>
+                <div  class="pics">
+                    <img src="./a32.jpg" alt="a4">
+                    <p>Washing machines</p>
+
+                </div>
+                
+            </div>
+            <div class="show-more">Show more</div>
+        </div>
+        
+      </div>
+
+      <div class="Row-1">
+        <div class="card">
+            <div class="card-header">Application for your home |<br> Up to 55% off</div>
+            <div class="row-1">
+                <div class="pics">
+                    <img src="./a1.jpg" alt="ac">
+                    <p>Air conditiones</p>
+                </div>
+                <div class="pics">
+                    <img src="./a2.jpg" alt="refrijtor">
+                    <p>Refrigerator</p>
+                </div>
+                
+            </div>
+            <div class="row-2">
+                <div class="pics">
+                    <img src="./a3.jpg" alt="a3">
+                    <p>Microwaves</p>
+                </div>
+                <div  class="pics">
+                    <img src="./a4.jpg" alt="a4">
+                    <p>Washing machines</p>
+
+                </div>
+                
+            </div>
+            <div class="show-more">Show more</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Application for your home |<br> Up to 55% off</div>
+            <div class="row-1">
+                <div class="pics">
+                    <img src="./a5.jpg" alt="ac">
+                    <p>Air conditiones</p>
+                </div>
+                <div class="pics">
+                    <img src="./a6.jpg" alt="refrijtor">
+                    <p>Refrigerator</p>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="pics">
+                    <img src="./a7.jpg" alt="a3">
+                    <p>Microwaves</p>
+                </div>
+                <div  class="pics">
+                    <img src="./a8.jpg" alt="a4">
+                    <p>Washing machines</p>
+
+                </div>
+                
+            </div>
+            <div class="show-more">Show more</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Application for your home |<br> Up to 55% off</div>
+            <div class="row-1">
+                <div class="pics">
+                    <img src="./a9.jpg" alt="ac">
+                    <p>Air conditiones</p>
+                </div>
+                <div class="pics">
+                    <img src="./a10.jpg" alt="refrijtor">
+                    <p>Refrigerator</p>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="pics">
+                    <img src="./a11.jpg" alt="a3">
+                    <p>Microwaves</p>
+                </div>
+                <div  class="pics">
+                    <img src="./a12.jpg" alt="a4">
+                    <p>Washing machines</p>
+
+                </div>
+               
+            </div>
+            <div class="show-more">Show more</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Application for your home |<br> Up to 55% off</div>
+            <div class="row-1">
+                <div class="pics">
+                    <img src="./a13.jpg" alt="ac">
+                    <p>Air conditiones</p>
+                </div>
+                <div class="pics">
+                    <img src="./a14.jpg" alt="refrijtor">
+                    <p>Refrigerator</p>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="pics">
+                    <img src="./a13.jpg" alt="a3">
+                    <p>Microwaves</p>
+                </div>
+                <div  class="pics">
+                    <img src="./a16.jpg" alt="a4">
+                    <p>Washing machines</p>
+
+                </div>
+                
+            </div>
+            <div class="show-more">Show more</div>
+        </div>
+        
+      </div>
+    </div>
+   </section>
+   <div class="Totop"><a href="#Totop"> Back to top</a> </div>
+   <footer>
+    <div class="footer-row-1">
+        <div>
+            <div class="footer-title">Get to Know <br> Us</div>
+            <p>About Amazon</p>
+            <p>Careers</p>
+            <p>Press Releases</p>
+            <p>Amazon Science</p>
+        </div>
+    
+        <div>
+            <div class="footer-title">Connect with <br> Us</div>
+            <aside>
+                <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+            </aside>
+            
+        </div>
+    
+        <div>
+            <div class="footer-title">Sell on Amazon</div>
+                <p>Sell under Amazon <br> Accelerator</p>
+                <p>Protect and Build Your Brand</p>
+                <p>Amazon Global Selling</p>
+                <p>Supply to Amazon</p>
+                <p>Become an Affiliate</p>
+                <p>Fulfilment by Amazon</p>
+                <p>Advertise Your Products</p>
+                <p>Amazon Pay on Merchants</p>
+        
+        </div>
+
+        <div>
+            <div class="footer-title">Let Us Help You</div>
+            <p>Your Account</p>
+            <p>Returns Centre</p>
+            <p>Recalls and Product Safety <br>Alerts</p>
+            <p>100% Purchase Protection</p>
+            <p>Amazon App Download</p>
+            <p>Help</p>
+        </div>
+    </div>
+    <hr noshade="gray" color="gray">
+
+    <div class="footer-row-2">
+        <div class="footer-logo">
+            <img src="./Logo.png" alt="">
+        </div>
+    </div>
+   </footer>
+</body>
+</html>
