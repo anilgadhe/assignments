@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendo-UI </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        h1{
+            margin-bottom: 60px;
+            font-size: 60px;
+        }
+
+        .nA{
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .nB{
+            background-color: green;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .bi-file-pdf-fill{
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: rgb(240, 238, 238);
+        }
+
+        .bi-file-excel{
+                
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: rgb(240, 238, 238);
+        }
+
+        .bi-search{
+          
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: rgb(240, 238, 238);
+           
+
+        }
+
+        .bi-arrow-down{
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: rgb(240, 238, 238);
+
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<h1>Kendo UI for jQuery Grid Overview </h1> 
+
+<table frame="box" width="100%" align="center" cellpadding="20">
+    <thead>
+        <tr height="40px" bgcolor="#EFEFEF">
+            <th align="left">EXAMPLE</th>
+            <th >View Source</th>
+            <th>Edit in kindo UI Dojo</th>
+            <th width="250"></th>
+            <th width="250"></th>
+            <th>Change theme</th>
+            <th>Default <span class="bi bi-caret-down-fill"></span></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="7" >
+                <table width="98%" align="center" frame="box"rules="rows" cellpadding="5">
+                   <thead>
+                    <tr height="45" >
+                        <td ><span class="bi bi-file-excel">Export to Excel</span></td>
+                        <td><span class="bi bi-file-pdf-fill">Export to PDF</span></td>
+                        <td width="800" border="0"></td>
+                        <td ><span class="bi bi-search">search</span></td>
+                    </tr>
+                </thead>
+                   <tbody>
+                    <tr height="40">
+                        <td> <span class="bi bi-arrow-down">Category <span class="bi bi-x-circle-fill"></span> </span></td>
+                    </tr>
+                      <tr>
+                        <td colspan="17" >
+                            <table rules="cols" width="100%" align="center">
+                                <colgroup></colgroup>
+                                <thead>
+                                    <tr  align="center" height="50" >
+                                    <td width="20"></td>
+                                    <td width="40"><input type="checkbox"></td>
+                                    <td width="150">Product Name <span class="bi bi-three-dots-vertical"></span></td>
+                                    <td width="150">price <span class="bi bi-three-dots-vertical"></span></td>
+                                    <td width="150">in stock <span class="bi bi-three-dots-vertical"></span></td>
+                                    <td width="150">Category <span class="bi bi-three-dots-vertical"></span></td>
+                                    <td width="150">Rating <span class="bi bi-three-dots-vertical"></span></td>
+                                    <td width="150">Country <span class="bi bi-three-dots-vertical"></span></td>
+                                    <td width="150">Units <span class="bi bi-three-dots-vertical"></span></td>
+                                    <td width="150">Total sales<span class="bi bi-three-dots-vertical"></span></td>
+                                    <td width="150">Target sales <span class="bi bi-three-dots-vertical"></span></td>
+                                    
+                                    <td></td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="17" >
+                                            <details>
+                                            
+                                                <summary><b> Category: Seafood, Total Sales: $21,100.00</b></summary>
+                                                <table  rules="cols" cellsapcing="80" frame="box" align="center">
+                                                    <tbody>
+                                                <tr align="center" height="50">
+                                                <td width="20"></td>
+                                                <td width="40"><input type="checkbox"></td>
+                                                <td width="150" >Ikura</td>
+                                                <td  width="150">$571.00</td>
+                                                <td  width="150" ><span class="nA">not available</span></td>
+                                                <td  width="150">Seafood</td>
+                                                <td  width="150">★★★★☆</td> 
+                                                <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                <td  width="150">500</td>
+                                                <td width="150" >$15,500.00</td>
+                                                <td width="150" >$20,000.00</td>
+                                                </tr>
+
+                                                <tr align="center" height="50">
+                                                    <td width="20"></td>
+                                                    <td width="40"><input type="checkbox"></td>
+                                                    <td width="150" >combula</td>
+                                                    <td  width="150">$78.00</td>
+                                                    <td  width="150" ><span class="nB">Available</span></td>
+                                                    <td  width="150">Seafood</td>
+                                                    <td  width="150">★★★★☆</td> 
+                                                    <td  width="150"><img src="./it.png" alt="US" width="40px" height="20px"></td>
+                                                    <td  width="150">500</td>
+                                                    <td width="150" >$15,500.00</td>
+                                                    <td width="150" >$20,000.00</td>
+                                                    </tr>
+
+                                                    <tr align="center" height="50">
+                                                        <td width="20"></td>
+                                                        <td width="40"><input type="checkbox"></td>
+                                                        <td width="150" >Nord-Ost Matjeshering</td>
+                                                        <td  width="150">$87.00</td>
+                                                        <td  width="150" ><span class="nA">not available</span></td>
+                                                        <td  width="150">Seafood</td>
+                                                        <td  width="150">★★★★☆</td> 
+                                                        <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                        <td  width="150">500</td>
+                                                        <td width="150" >$15,500.00</td>
+                                                        <td width="150" >$20,000.00</td>
+                                                        </tr>
+
+                                                        <tr align="center" height="50">
+                                                            <td width="20"></td>
+                                                            <td width="40"><input type="checkbox"></td>
+                                                            <td width="150" >Nord-Ost Matjeshering</td>
+                                                            <td  width="150">$09.00</td>
+                                                            <td  width="150" ><span class="nA">not available</span></td>
+                                                            <td  width="150">Seafood</td>
+                                                            <td  width="150">★★★★☆</td> 
+                                                            <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                            <td  width="150">500</td>
+                                                            <td width="150" >$15,500.00</td>
+                                                            <td width="150" >$20,000.00</td>
+                                                            </tr>
+                                            </tbody>
+                                        </table>
+                                         </details>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="17" >
+                                            <details>
+                                            
+                                                <summary><b> Category: Seafood, Total Sales: $21,100.00</b></summary>
+                                                <table  rules="cols" cellsapcing="80" frame="box" align="center">
+                                                    <tbody>
+                                                <tr align="center" height="50">
+                                                <td width="20"></td>
+                                                <td width="40"><input type="checkbox"></td>
+                                                <td width="150" >Ikura</td>
+                                                <td  width="150">$78.00</td>
+                                                <td  width="150" ><span class="nB"> Available</span></td>
+                                                <td  width="150">Seafood</td>
+                                                <td  width="150">★★★★☆</td> 
+                                                <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                <td  width="150">500</td>
+                                                <td width="150" >$15,500.00</td>
+                                                <td width="150" >$20,000.00</td>
+                                                </tr>
+
+                                                <tr align="center" height="50">
+                                                    <td width="20"></td>
+                                                    <td width="40"><input type="checkbox"></td>
+                                                    <td width="150" >Ikura</td>
+                                                    <td  width="150">$98.00</td>
+                                                    <td  width="150" ><span class="nA">not Available</span></td>
+                                                    <td  width="150">Seafood</td>
+                                                    <td  width="150">★★★★☆</td> 
+                                                    <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                    <td  width="150">500</td>
+                                                    <td width="150" >$15,500.00</td>
+                                                    <td width="150" >$20,000.00</td>
+                                                    </tr>
+
+                                                    <tr align="center" height="50">
+                                                        <td width="20"></td>
+                                                        <td width="40"><input type="checkbox"></td>
+                                                        <td width="150" >combu</td>
+                                                        <td  width="150">$37.00</td>
+                                                        <td  width="150" ><span class="nB">Available</span></td>
+                                                        <td  width="150">Seafood</td>
+                                                        <td  width="150">★★★★☆</td> 
+                                                        <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                        <td  width="150">500</td>
+                                                        <td width="150" >$15,500.00</td>
+                                                        <td width="150" >$20,000.00</td>
+                                                        </tr>
+
+                                                        <tr align="center" height="50">
+                                                            <td width="20"></td>
+                                                            <td width="40"><input type="checkbox"></td>
+                                                            <td width="150" >Carnarvon Tigers</td>
+                                                            <td  width="150">$29.00</td>
+                                                            <td  width="150" ><span class="nA">not available</span></td>
+                                                            <td  width="150">Seafood</td>
+                                                            <td  width="150">★★★★☆</td> 
+                                                            <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                            <td  width="150">500</td>
+                                                            <td width="150" >$15,500.00</td>
+                                                            <td width="150" >$20,000.00</td>
+                                                            </tr>
+                                            </tbody>
+                                        </table>
+                                         </details>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="17" >
+                                            <details>
+                                            
+                                                <summary><b>Category: Grains/Cereals, Total Sales: $35,800.00</b></summary>
+                                                <table  rules="cols" cellsapcing="80" frame="box" align="center">
+                                                    <tbody>
+                                                <tr align="center" height="50">
+                                                <td width="20"></td>
+                                                <td width="40"><input type="checkbox"></td>
+                                                <td width="150" >Nord-Ost Matjeshering</td>
+                                                <td  width="150">$31.00</td>
+                                                <td  width="150" ><span class="nA">not available</span></td>
+                                                <td  width="150">Seafood</td>
+                                                <td  width="150">★★★★☆</td> 
+                                                <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                <td  width="150">500</td>
+                                                <td width="150" >$15,500.00</td>
+                                                <td width="150" >$20,000.00</td>
+                                                </tr>
+
+                                                <tr align="center" height="50">
+                                                    <td width="20"></td>
+                                                    <td width="40"><input type="checkbox"></td>
+                                                    <td width="150" >Ikura</td>
+                                                    <td  width="150">$31.00</td>
+                                                    <td  width="150" ><span class="nA">not available</span></td>
+                                                    <td  width="150">Seafood</td>
+                                                    <td  width="150">★★★★☆</td> 
+                                                    <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                    <td  width="150">500</td>
+                                                    <td width="150" >$15,500.00</td>
+                                                    <td width="150" >$20,000.00</td>
+                                                    </tr>
+
+                                                    <tr align="center" height="50">
+                                                        <td width="20"></td>
+                                                        <td width="40"><input type="checkbox"></td>
+                                                        <td width="150" >Ikura</td>
+                                                        <td  width="150">$31.00</td>
+                                                        <td  width="150" ><span class="nA">not available</span></td>
+                                                        <td  width="150">Seafood</td>
+                                                        <td  width="150">★★★★☆</td> 
+                                                        <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                        <td  width="150">500</td>
+                                                        <td width="150" >$15,500.00</td>
+                                                        <td width="150" >$20,000.00</td>
+                                                        </tr>
+
+                                                        <tr align="center" height="50">
+                                                            <td width="20"></td>
+                                                            <td width="40"><input type="checkbox"></td>
+                                                            <td width="150" >Ikura</td>
+                                                            <td  width="150">$31.00</td>
+                                                            <td  width="150" ><span class="nA">not available</span></td>
+                                                            <td  width="150">Seafood</td>
+                                                            <td  width="150">★★★★☆</td> 
+                                                            <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                            <td  width="150">500</td>
+                                                            <td width="150" >$15,500.00</td>
+                                                            <td width="150" >$20,000.00</td>
+                                                            </tr>
+                                            </tbody>
+                                        </table>
+                                         </details>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="17" >
+                                            <details>
+                                            
+                                                <summary><b>Category: Meat/Poultry, Total Sales: $39,200.00</b></summary>
+                                                <table  rules="cols" cellsapcing="80" frame="box" align="center">
+                                                    <tbody>
+                                                <tr align="center" height="50">
+                                                <td width="20"></td>
+                                                <td width="40"><input type="checkbox"></td>
+                                                <td width="150" >Ikura</td>
+                                                <td  width="150">$31.00</td>
+                                                <td  width="150" ><span class="nB">Available</span></td>
+                                                <td  width="150">Seafood</td>
+                                                <td  width="150">★★★★☆</td> 
+                                                <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                <td  width="150">500</td>
+                                                <td width="150" >$15,500.00</td>
+                                                <td width="150" >$20,000.00</td>
+                                                </tr>
+
+                                                <tr align="center" height="50">
+                                                    <td width="20"></td>
+                                                    <td width="40"><input type="checkbox"></td>
+                                                    <td width="150" >Ikura</td>
+                                                    <td  width="150">$31.00</td>
+                                                    <td  width="150" ><span class="nA">not available</span></td>
+                                                    <td  width="150">Seafood</td>
+                                                    <td  width="150">★★★★☆</td> 
+                                                    <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                    <td  width="150">500</td>
+                                                    <td width="150" >$15,500.00</td>
+                                                    <td width="150" >$20,000.00</td>
+                                                    </tr>
+
+                                                    <tr align="center" height="50">
+                                                        <td width="20"></td>
+                                                        <td width="40"><input type="checkbox"></td>
+                                                        <td width="150" >Ikura</td>
+                                                        <td  width="150">$31.00</td>
+                                                        <td  width="150" ><span class="nB">Available</span></td>
+                                                        <td  width="150">Seafood</td>
+                                                        <td  width="150">★★★★☆</td> 
+                                                        <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                        <td  width="150">500</td>
+                                                        <td width="150" >$15,500.00</td>
+                                                        <td width="150" >$20,000.00</td>
+                                                        </tr>
+
+                                                        <tr align="center" height="50">
+                                                            <td width="20"></td>
+                                                            <td width="40"><input type="checkbox"></td>
+                                                            <td width="150" >Ikura</td>
+                                                            <td  width="150">$31.00</td>
+                                                            <td  width="150" ><span class="nA">not available</span></td>
+                                                            <td  width="150">Seafood</td>
+                                                            <td  width="150">★★★★☆</td> 
+                                                            <td  width="150"><img src="./gb.png" alt="US" width="40px" height="20px"></td>
+                                                            <td  width="150">500</td>
+                                                            <td width="150" >$15,500.00</td>
+                                                            <td width="150" >$20,000.00</td>
+                                                            </tr>
+                                            </tbody>
+                                        </table>
+                                         </details>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                      </tr>
+                   </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+    
+</body>
+</html>
