@@ -1,0 +1,151 @@
+@media screen and (max-width:1200px) {
+    .header-lan,.header-services,.header-asides{
+        display: none;
+    } 
+    .header-rw-1 .bi-justify
+ {
+        display: inline;
+        border:none;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .header-rw-2{
+        display: flex;
+        justify-content: space-around;
+        gap: 200px;
+    }
+    .navbar, .catalog{
+        display: none;
+    } 
+    
+    .header-rw-2 .bi-justify
+    {
+           display: inline;
+           border:none;
+           font-size: 20px;
+       }
+
+       main .kids-fashion{
+        display: none;
+       }
+
+       main , .services{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+       }
+
+       .services .main-service{
+        margin: 10px 10px 10px 10px ;
+        box-shadow: 5px 5px 10px black;
+    }
+
+    .boxes{
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        margin-left: 50px;
+    }
+
+    .card .tag{
+        width: 180px;
+         height: 150px;
+         background-size: cover;
+    }
+    .footer-2{
+        gap: 20px;
+    }
+
+    .tag .tag-buttons{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:767px){
+    main .Men-fashion{
+        display: none;
+    }
+    main,.services,.collection-rw-1,.collection-rw-2{
+        display: grid;
+        grid-template-columns: 12fr;
+    }
+
+    .services .main-service{
+        margin: 10px 0px 10px 0px ;
+    }
+
+    .boxes{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        margin-left:0px; 
+          
+    }
+    .card .tag{
+        width: 180px;
+         height: 200px;
+         background-size: cover;
+         margin-top: 30px;
+        
+    }
+
+    .shop-bags,.shop-mens-shirt,.shop-womens-dress,.shop-sweatshirt{
+        margin-top: 20px;
+        margin-left: 0px;
+        width: 380px;
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+       
+    }
+    .shop-bags,.shop-sweatshirt{
+        width:400px
+       
+    }
+
+    .collection-rw-1{
+       height:170vh;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .collection-rw-2{
+      height:170vh;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+
+    .discover{
+    margin-top: 50px;
+    }
+
+    .footer-2{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        margin-top: 20px;
+    }
+
+  
+
+    footer{
+        height: 120vh;
+    }
+
+    .footer-sec{
+        margin-top: 20px;
+    }
+
+    .mail{
+        width: 200px;
+    }
+
+    .subscribe{
+        width: 100px;
+    }
+
+    .tag .tag-buttons{
+        margin-left: 20px;
+    }
+
+   
+}
