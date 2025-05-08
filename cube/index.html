@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box-1{
+            height: 200px;
+            width: 180px;
+            border: 3px solid black;
+            transform: translateY(-20px);
+              background-color: lightgreen;  
+              z-index: 2;
+              opacity: 0.7;
+        }
+
+        .box-2{
+            height: 120px;
+            width: 180px;
+            border: 3px solid black;
+            transform:translate(-113px ,-185px) skewX(-49deg);
+              background-color: lightsalmon;  
+              z-index: 1;
+              opacity: 0.7;
+            
+        }
+
+        .box-3{
+            height: 120px;
+            width: 180px;
+            border: 3px solid black;
+           transform: translate(-300px,20px) skewX(-50deg);
+            background-color: lightskyblue; 
+            opacity: 0.7;
+         
+        }
+
+        .box-4{
+            height: 200px;
+            width: 180px;
+            border: 3px solid black;
+            transform:translate(-410px ,-145px) ;
+           
+           background-color: lightpink;
+           opacity: 0.7;
+        }
+
+        
+            
+ .box-5 {
+    height: 200px;
+    width: 140px;
+    border: 3px solid black;
+    transform: translate(-555px, -85px) skewY(-40deg);
+     background-color: beige; 
+     opacity: 0.7;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+    <div class="box box-4"></div>
+    <div class="box box-5"></div>
+</body>
+</html>
