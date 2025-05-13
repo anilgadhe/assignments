@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollspy</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+  .scrollspy-example {
+    height: 400px;
+    overflow-y: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+</style>
+
+</head>
+<body>
+  <div class="row">
+    <div class="col-4">
+        <div class="list-group" id="list-example">
+            <a href="#li-item-1" class="list-group-item list-group-item-action">tabindex</a>
+            <a href="#li-item-2" class="list-group-item list-group-item-action">Item-2</a>
+            <a href="#li-item-3" class="list-group-item list-group-item-action">Item-3</a>
+            <a href="#li-item-4" class="list-group-item list-group-item-action">Item-4</a>
+            <a href="#li-item-5" class="list-group-item list-group-item-action">Item-5</a>
+        </div>
+    </div>
+
+    <div class="col-8">
+     <div id="scrollspy" class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0">
+
+        <h3 id="li-item-1">tabindex</h3>
+        <p> If there is no focusable element inside the element, be sure to also include a tabindex="0" to ensure keyboard access.   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur inventore quos aut quae voluptatibus doloremque cupiditate similique incidunt a labore, odit soluta libero quia numquam suscipit error! Eligendi, minus dicta.
+        Officia ratione voluptatum quis ex cupiditate saepe incidunt omnis iusto. Inventore doloremque labore porro odio distinctio perspiciatis eum quidem corporis, beatae, placeat similique laboriosam, laborum quis deleniti aspernatur accusantium explicabo.
+        Molestiae corporis facere, maxime ducimus temporibus assumenda libero impedit quod a distinctio dolore quisquam eum delectus, alias odit voluptatibus nostrum praesentium, quis beatae at! Quidem provident fugit cumque deleniti dolorem.
+        Provident aliquid maiores nobis vel praesentium odio amet non, commodi ipsum. Sapiente rem eos id eius fugiat aliquid magnam praesentium nulla, ipsa unde deleniti, veritatis error. Iusto tenetur culpa numquam.</p>
+
+        <h3 id="li-item-2">Item-2</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, nihil aut. Aperiam, a velit sapiente nesciunt cum vero blanditiis ipsum itaque iusto consequuntur repellat. Reiciendis voluptatem odio quos assumenda eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo alias, expedita ex facilis nam corporis commodi totam neque dicta vitae illum praesentium molestiae eaque officiis, aperiam facere tempore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur quaerat delectus pariatur ea reprehenderit, modi earum et libero doloribus nobis ipsum hic facilis, saepe veniam voluptate aperiam vitae odio.
+        Nam ut animi qui nemo ad eligendi, ipsa sint nostrum aliquam, blanditiis quas sed? Sequi voluptatum aut exercitationem nostrum, deleniti amet vel veritatis hic, earum animi tempore nisi quia vero.
+        Quia, cupiditate facere at libero et totam nesciunt corporis assumenda, cum temporibus laudantium! Nesciunt magni cupiditate debitis, totam ea cum odio consectetur fugiat quis facilis beatae dolores explicabo iusto sint. </p>
+
+       
+        <h3 id="li-item-3">Item-3</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, nihil aut. Aperiam, a velit sapiente nesciunt cum vero blanditiis ipsum itaque iusto consequuntur repellat. Reiciendis voluptatem odio quos assumenda eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo alias, expedita ex facilis nam corporis commodi totam neque dicta vitae illum praesentium molestiae eaque officiis, aperiam facere tempore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur quaerat delectus pariatur ea reprehenderit, modi earum et libero doloribus nobis ipsum hic facilis, saepe veniam voluptate aperiam vitae odio.
+        Nam ut animi qui nemo ad eligendi, ipsa sint nostrum aliquam, blanditiis quas sed? Sequi voluptatum aut exercitationem nostrum, deleniti amet vel veritatis hic, earum animi tempore nisi quia vero.
+        Quia, cupiditate facere at libero et totam nesciunt corporis assumenda, cum temporibus laudantium! Nesciunt magni cupiditate debitis, totam ea cum odio consectetur fugiat quis facilis beatae dolores explicabo iusto sint. </p>
+
+         <h3 id="li-item-4">Item-4</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, nihil aut. Aperiam, a velit sapiente nesciunt cum vero blanditiis ipsum itaque iusto consequuntur repellat. Reiciendis voluptatem odio quos assumenda eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo alias, expedita ex facilis nam corporis commodi totam neque dicta vitae illum praesentium molestiae eaque officiis, aperiam facere tempore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur quaerat delectus pariatur ea reprehenderit, modi earum et libero doloribus nobis ipsum hic facilis, saepe veniam voluptate aperiam vitae odio.
+        Nam ut animi qui nemo ad eligendi, ipsa sint nostrum aliquam, blanditiis quas sed? Sequi voluptatum aut exercitationem nostrum, deleniti amet vel veritatis hic, earum animi tempore nisi quia vero.
+        Quia, cupiditate facere at libero et totam nesciunt corporis assumenda, cum temporibus laudantium! Nesciunt magni cupiditate debitis, totam ea cum odio consectetur fugiat quis facilis beatae dolores explicabo iusto sint. </p>
+
+
+         <h3 id="li-item-5">Item-5</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, nihil aut. Aperiam, a velit sapiente nesciunt cum vero blanditiis ipsum itaque iusto consequuntur repellat. Reiciendis voluptatem odio quos assumenda eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo alias, expedita ex facilis nam corporis commodi totam neque dicta vitae illum praesentium molestiae eaque officiis, aperiam facere tempore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur quaerat delectus pariatur ea reprehenderit, modi earum et libero doloribus nobis ipsum hic facilis, saepe veniam voluptate aperiam vitae odio.
+        Nam ut animi qui nemo ad eligendi, ipsa sint nostrum aliquam, blanditiis quas sed? Sequi voluptatum aut exercitationem nostrum, deleniti amet vel veritatis hic, earum animi tempore nisi quia vero.
+        Quia, cupiditate facere at libero et totam nesciunt corporis assumenda, cum temporibus laudantium! Nesciunt magni cupiditate debitis, totam ea cum odio consectetur fugiat quis facilis beatae dolores explicabo iusto sint. </p>
+      
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>       
+</body>
+</html>

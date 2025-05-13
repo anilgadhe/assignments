@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Cube Cluster</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0d1117;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1000px;
+    }
+
+    .box {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      transform-style: preserve-3d;
+      animation: rotateScene 20s linear infinite;
+    }
+
+    .cube {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      transform-style: preserve-3d;
+      transition: transform 0.4s ease, scale 0.4s ease;
+    }
+
+    .cube:hover {
+      transform: scale(1.2) rotateX(15deg) rotateY(15deg);
+    }
+
+    .face {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(4px);
+    }
+
+    .front  { transform: rotateY(  0deg) translateZ(40px); }
+    .back   { transform: rotateY(180deg) translateZ(40px); }
+    .right  { transform: rotateY( 90deg) translateZ(40px); }
+    .left   { transform: rotateY(-90deg) translateZ(40px); }
+    .top    { transform: rotateX( 90deg) translateZ(40px); }
+    .bottom { transform: rotateX(-90deg) translateZ(40px); }
+
+    /* Placement: 4 corner cubes */
+    .v1 { top: 0; left: 0; }
+    .v2 { top: 0; right: 0; }
+    .v3 { bottom: 0; left: 0; }
+    .v4 { bottom: 0; right: 0; }
+
+    /* Center Cube */
+    .center {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Gradient/mirror colors for vertices */
+    .v1 .face, .v4 .face {
+      background: linear-gradient(135deg, #33ccff, #ff99cc);
+    }
+
+    .v2 .face, .v3 .face {
+      background: linear-gradient(135deg, #ff99cc, #33ccff);
+    }
+
+    /* Center cube styling */
+    .center .face {
+      background: linear-gradient(45deg, #00ff99, #0066ff);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <!-- Corner Cubes -->
+    <div class="cube v1">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+
+    <div class="cube v2">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+
+    <div class="cube v3">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+
+    <div class="cube v4">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+
+    <!-- Center Cube -->
+    <div class="cube center">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+  </div>
+</body>
+</html>

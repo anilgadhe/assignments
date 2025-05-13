@@ -1,0 +1,155 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#fff;
+}
+
+.card{
+    height: 300px !important;
+}
+.loader {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #FF3D00;
+    position: relative;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    background: #fff;
+    transform: rotate(0deg) translate(30px);
+    animation: rotate 1s ease infinite;
+  }
+
+  .loader:after {
+    animation-delay: 0.5s
+  }
+ 
+  @keyframes rotate {
+    100% {transform: rotate(360deg) translate(30px);
+  }
+} 
+
+
+.loder-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-top: 3px solid whitesmoke ;
+    border-left: 3px solid whitesmoke ;
+    border-right: 3px solid whitesmoke ;
+    border-bottom: 3px solid red;
+   
+    animation-name: circle;
+    animation-duration: 0.80s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes circle{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loder-circle-inside{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 3px solid whitesmoke ;
+   
+    animation-name: circle;
+    animation-duration: 0.80s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    position: relative;
+    
+}
+
+.inside-circle{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    width: 20px;
+     height: 20px;
+     border-radius: 100%;
+     border-right:2px solid red;
+     border-left:2px solid red;
+     border-top: 1px solid black;
+     border-bottom: 1px solid black;
+     top: 2px;
+     right: 3px;
+     position: absolute;
+}
+
+.dotted-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 3px dotted whitesmoke ;
+   
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+   
+    
+}
+
+.half-dotted{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 3px solid whitesmoke ;
+    border-right: 3px dotted whitesmoke;
+    border-bottom: 3px dotted whitesmoke ;
+   
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+
+}
+
+.half-dotted-inside-circle{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    width: 20px;
+     height: 20px;
+     border-radius: 100%;
+     border-right:2px dotted red;
+     border-left:2px solid red;
+     border-top: 1px solid red;
+     border-bottom: 1px dotted red;
+     top: 2px;
+     right: 3px;
+
+     animation-name: circle;
+     animation-duration: 2s;
+     animation-direction: reverse;
+     animation-timing-function:ease-in;
+     animation-iteration-count:infinite;
+     
+}
+
+.half-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+   
+    border-right: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke ;
+   
+    animation-name: circle;
+    animation-duration: 1s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;  
+}
